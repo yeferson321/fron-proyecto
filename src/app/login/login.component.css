@@ -9,9 +9,9 @@ body {
     font-size: medium;
 }
 
-.form-registro {
+.form-formu {
     width: 400px;
-    height: 510px;
+    height: 400px;
     background: #fdfdfd;
     margin: auto;
     margin-top: 100px;
@@ -21,7 +21,7 @@ body {
     color: black;
 }
 
-.form-registro h3 {
+.form-formu h3 {
     margin: 0;
     text-align: center;
     height: 40px;

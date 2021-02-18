@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'arial';
+    font-size: medium;
+}
+
+.form-formu {
+    width: 400px;
+    height: 510px;
+    background: #fdfdfd;
+    margin: auto;
+    margin-top: 100px;
+    box-shadow: 7px 13px 37px #000;
+    padding: 20px 30px;
+    border-top: 4px solid #017bab;
+    color: black;
+}
+
+.form-formu h3 {
+    margin: 0;
+    text-align: center;
+    height: 40px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid;
+}
+
+.control {
+    width: 100%;
+    border: 0;
+    border-bottom: 4px solid #6ecaff;
+    margin-bottom: 6px;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.boton {
+    width: 100%;
+    height: 50px;
+    background: #01172063;
+    border: none;
+    color: white;
+    margin-top: 16px;
+}
