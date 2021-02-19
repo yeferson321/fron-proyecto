@@ -1,26 +1,27 @@
 <section class="form-formu">
-    <h3> Patitas Empolvadas</h3>
-    <div *ngIf="load">
-        <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <h3>Login Patitas Empolvadas</h3>
 
-            <div class="form-group">
-                <label for="exampleInputEmail1">Email</label>
-                <input class="control" formControlName="email" type="email" i aria-describedby="emailHelp">
-            </div>
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label for="exampleInputEmail1">Email</label>
+            <input class="control" formControlName="email" type="email" i aria-describedby="emailHelp">
+        </div>
 
-            <div class="form-group">
-                <label for="exampleInputPassword1">Password</label>
-                <input class="control" formControlName="password" type="password">
-            </div>
-            <button type="submit" class="boton">Submit</button>
-            <a href="..." class="nav-link" style="color:#264eff" [routerLink]="['/registro']">¿No tienes cuenta? Registrate</a>
-
-        </form>
-    </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input class="control" formControlName="password" type="password">
+        </div>
+        <div *ngIf="load">
+            <button type="submit" class="boton">Sign in</button>
+        </div>
+        <div class="con">
+            <a href="..." class="nav-link" style="color:#264eff" [routerLink]="['/registro']">¿No tienes una cuenta? Registrate</a>
+        </div>
+    </form>
 </section>
 
-<div class="text-center">
-    <div *ngIf="!load" class="spinner-border" role="status">
+<div class="d-flex justify-content-center">
+    <div *ngIf="!load" class="spinner-border text-info" role="status">
         <span class="visually-hidden"></span>
     </div>
 </div>
