@@ -8,13 +8,25 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { RegistroComponent } from './registro/registro.component';
 import { MensajeexitoComponent } from './mensajeexito/mensajeexito.component';
+import { NavComponent } from './nav/nav.component';
+import { FooterComponent } from './footer/footer.component';
+import { InicioComponent } from './inicio/inicio.component';
+import { AdopcionComponent } from './adopcion/adopcion.component';
+import { MascotaComponent } from './mascota/mascota.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     RegistroComponent,
-    MensajeexitoComponent
+    MensajeexitoComponent,
+    NavComponent,
+    FooterComponent,
+    InicioComponent,
+    AdopcionComponent,
+    MascotaComponent,
+
   ],
   imports: [
     BrowserModule,

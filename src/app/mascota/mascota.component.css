@@ -11,12 +11,12 @@ body {
 
 .form-formu {
     width: 340px;
-    height: 520px;
+    height: 500px;
     background: #fdfdfd;
     margin: auto;
-    margin-top: 12px;
-    box-shadow: 0px 0px 22px #000;
-    padding: 15px 30px;
+    margin-top: 40px;
+    box-shadow: 0px 0px 26px #000;
+    padding: 20px 30px;
     border-top: 4px solid #A0856E;
     color: black;
     border-radius: 20px;

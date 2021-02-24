@@ -1,0 +1,15 @@
+.foo {
+    display: flex;
+    position: fixed;
+}
+
+.foo-left {
+    background-color: #A0856E;
+    margin-top: 35px;
+    padding-bottom: 12px;
+    padding-top: 10px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 15px;
+    color: white;
+}

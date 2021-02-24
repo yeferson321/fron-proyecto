@@ -1,0 +1,39 @@
+<app-nav></app-nav>
+
+<section class="form-formu">
+    <h3>registro mascota nueva</h3>
+
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label for="exampleInputPassword1">nombre Mascota</label>
+            <input class="control" formControlName="nameMas" type="text" i aria-describedby="emailHelp">
+        </div>
+
+        <div class="form-group">
+            <label for="exampleInputPassword1">identificacion Mascota </label>
+            <input class="control" formControlName="idMas" type="number">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">raza Mascota </label>
+            <input class="control" formControlName="raz" type="text">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">edad Mascota </label>
+            <input class="control" formControlName="ageM" type="number">
+        </div>
+
+        <div *ngIf="load2">
+            <button type="submit" class="boton">registrar</button>
+        </div>
+        <div class="con">
+            <a href="..." class="nav-link" style="color:#000000" [routerLink]="['/']">ver mascotas disponibles</a>
+        </div>
+    </form>
+</section>
+
+<div class="d-flex justify-content-center">
+    <div *ngIf="!load2" class="spinner-border text-info" role="status">
+        <span class="visually-hidden"></span>
+    </div>
+</div>
+<app-footer></app-footer>

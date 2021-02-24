@@ -3,16 +3,15 @@ import { Router } from '@angular/router';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { AppService } from '../service/app.service';
 
-
 @Component({
-  selector: 'app-registro',
-  templateUrl: './registro.component.html',
-  styleUrls: ['./registro.component.css']
+  selector: 'app-adopcion',
+  templateUrl: './adopcion.component.html',
+  styleUrls: ['./adopcion.component.css']
 })
-export class RegistroComponent implements OnInit {
+export class AdopcionComponent implements OnInit {
 
   form: FormGroup;
-  load: boolean = true;
+  load1: boolean = true;
 
   constructor(
     private fb: FormBuilder,
@@ -21,30 +20,31 @@ export class RegistroComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.form = this.fb.group({
-      name: ['', Validators.required],
-      lastname: ['', Validators.required],
-      phone: ['', Validators.required],
+      this.form = this.fb.group({
+      namepet: ['', Validators.required],
+      raze: ['', Validators.required],
+      ide: ['', Validators.required],
+      age:['',Validators.required],
       email: ['', Validators.email],
-      password: ['', Validators.required],
+
     });
   }
-
   async onSubmit() {
 
 
     if (this.form.valid) {
 
       let data = {
-        name: this.form.value.name,
-        lastname: this.form.value.lastname,
-        phone: this.form.value.phone,
+        namepet: this.form.value.namepet,
+        raze: this.form.value.raze,
+        ide: this.form.value.ide,
+        age:this.form.value.age,
         email: this.form.value.email,
-        password: this.form.value.password,
+
       }
 
-      this.load = false;
-      this.client.postRequest('http://localhost:5000/api/v01/user/registro', data).subscribe(
+      this.load1 = false;
+      this.client.postRequest('http://localhost:5000/api/v01/user/adopcion', data).subscribe(
 
         (response: any) => {
           this.route.navigate( ['/mensajeexito']);
@@ -66,4 +66,3 @@ export class RegistroComponent implements OnInit {
   }
 
 }
-
