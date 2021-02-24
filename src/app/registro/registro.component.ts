@@ -14,6 +14,7 @@ export class RegistroComponent implements OnInit {
   form: FormGroup;
   load: boolean = true;
 
+
   constructor(
     private fb: FormBuilder,
     private route: Router,

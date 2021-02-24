@@ -1,6 +1,5 @@
-<app-nav>
-    
-</app-nav><section class="form-formu">
+<app-nav></app-nav>
+<section class="form-formu">
     <h3>Registro usuario </h3>
     <form [formGroup]="form" (ngSubmit)="onSubmit()">
         <div class="form-group">
@@ -29,7 +28,7 @@
             <button type="submit" class="boton">Registrarse</button>
         </div>
         <div class="con">
-            <a href="..." class="nav-link" style="color:#000000" [routerLink]="['/login']">¿Ya tienes una cuenta? Iniciar</a>
+            <a href="..." class="nav-link" [routerLink]="['/login']">¿Ya tienes una cuenta? Iniciar</a>
         </div>
     </form>
 
@@ -40,4 +39,3 @@
         <span class="visually-hidden"></span>
     </div>
 </div>
-

@@ -1,11 +1,28 @@
-.navbar{
+img {
+    top: 3px;
+    position: fixed;
+    margin-left: -1%;
+    width: 50px;
+}
+
+.navbar {
     background-color: #00adff61;
+    height: 53px;
+    top: 0;
 }
 
-.container-fluid a{
+.container-fluid h1 {
     color: beige;
+    font-size: 150%;
+    margin-left: 53%;
+    font-family: 'Akaya Telivigala', cursive;
+    margin-top: -5%;
 }
 
-.nav-item a{
+.nav-item a {
     color: beige;
+    font-size: 17px;
+    font-weight: 550;
+    width: 109px;
+    margin-top: -12px;
 }
