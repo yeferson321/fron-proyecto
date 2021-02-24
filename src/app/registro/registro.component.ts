@@ -47,7 +47,7 @@ export class RegistroComponent implements OnInit {
       this.client.postRequest('http://localhost:5000/api/v01/user/registro', data).subscribe(
 
         (response: any) => {
-          this.route.navigate( ['/mensajeexito']);
+          this.route.navigate( ['/login']);
 
       },
       (error) => {
