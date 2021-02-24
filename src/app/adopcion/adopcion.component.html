@@ -1,0 +1,39 @@
+<app-nav></app-nav>
+<section class="form-formu">
+    <h3>adoptar un peludito</h3>
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label for="exampleInputPassword1">nombre del peludito</label>
+            <input formControlName="namepet" type="text" class="control">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">raza</label>
+            <input formControlName="raze" type="text" class="control">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">identificacion</label>
+            <input formControlName="ide" type="text" class="control">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">edad</label>
+            <input formControlName="age" type="text" class="control">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Email</label>
+            <input formControlName="email" type="email" class="control" i aria-describedby="emailHelp">
+        </div>
+        <div *ngIf="load1">
+            <button type="submit" class="boton">Enviar</button>
+        </div>
+        <div class="con">
+            <a href="..." class="nav-link" style="color:#0a0a0a" [routerLink]="['/registro']">registrarme para doptar</a>
+        </div>
+    </form>
+</section>
+
+<div class="d-flex justify-content-center">
+    <div *ngIf="!load1" class="spinner-border text-info" role="status">
+        <span class="visually-hidden"></span>
+    </div>
+</div>
+<app-footer></app-footer>
