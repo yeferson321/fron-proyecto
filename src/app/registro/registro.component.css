@@ -7,6 +7,7 @@
 body {
     font-family: 'Courier New', Courier, monospace;
     font-size: medium;
+    background-image: url("https://carlotaruizblanque.files.wordpress.com/2012/01/sin-tc3adtulo-2.gif");
 }
 
 .form-formu {
@@ -14,8 +15,8 @@ body {
     height: 520px;
     background: #fdfdfd;
     margin: auto;
-    margin-top: 12px;
-    box-shadow: 0px 0px 22px #000;
+    margin-top: 5%;
+    box-shadow: 0px 0px 12px #000;
     padding: 15px 30px;
     border-top: 4px solid #A0856E;
     color: black;
@@ -72,6 +73,6 @@ body {
 }
 
 .spinner-border {
-    top: 80%;
+    top: 75%;
     position: absolute;
 }

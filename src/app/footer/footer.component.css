@@ -1,15 +1,23 @@
-.foo {
-    display: flex;
-    position: fixed;
+.rounded {
+    width: 36px;
+    margin-top: 0%;
+    position: relative;
 }
 
-.foo-left {
-    background-color: #A0856E;
-    margin-top: 35px;
-    padding-bottom: 12px;
-    padding-top: 10px;
-    text-align: center;
-    font-family: sans-serif;
-    font-size: 15px;
-    color: white;
+.card {
+    border-radius: 0px;
+}
+
+.card-header {
+    margin-top: -2%;
+    background-color: rgb(255, 255, 255);
+}
+
+.card-footer{
+    background-color:#00adff61;
+   
+}
+
+.card-footer p{
+    color:white;
 }

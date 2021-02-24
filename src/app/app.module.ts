@@ -13,6 +13,7 @@ import { FooterComponent } from './footer/footer.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { AdopcionComponent } from './adopcion/adopcion.component';
 import { MascotaComponent } from './mascota/mascota.component';
+import { Nav2Component } from './nav2/nav2.component';
 
 
 @NgModule({
@@ -26,6 +27,7 @@ import { MascotaComponent } from './mascota/mascota.component';
     InicioComponent,
     AdopcionComponent,
     MascotaComponent,
+    Nav2Component,
 
   ],
   imports: [

@@ -36,7 +36,7 @@ export class LoginComponent implements OnInit {
       this.client.postRequest('http://localhost:5000/api/v01/user/login', data).subscribe(
 
         (response: any) => {
-          this.route.navigate( ['/mensajeexito']);
+          this.route.navigate( ['/']);
 
       },
       (error) => {
