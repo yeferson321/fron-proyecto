@@ -14,6 +14,7 @@ import { InicioComponent } from './inicio/inicio.component';
 import { AdopcionComponent } from './adopcion/adopcion.component';
 import { MascotaComponent } from './mascota/mascota.component';
 import { Nav2Component } from './nav2/nav2.component';
+import { PaginaprincipalComponent } from './paginaprincipal/paginaprincipal.component';
 
 
 @NgModule({
@@ -28,6 +29,7 @@ import { Nav2Component } from './nav2/nav2.component';
     AdopcionComponent,
     MascotaComponent,
     Nav2Component,
+    PaginaprincipalComponent,
 
   ],
   imports: [

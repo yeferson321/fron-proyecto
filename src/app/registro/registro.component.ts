@@ -2,6 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { AppService } from '../service/app.service';
+import { environment } from '../../environments/environment';
+
+import Swal from 'sweetalert2/dist/sweetalert2.js';
 
 
 @Component({
@@ -42,12 +45,24 @@ export class RegistroComponent implements OnInit {
         email: this.form.value.email,
         password: this.form.value.password,
       }
-
       this.load = false;
       this.client.postRequest('http://localhost:5000/api/v01/user/registro', data).subscribe(
 
+      //this.load = false;
+      //this.client.postRequest(`${environment.BASE_API}/user/login`, data).subscribe(
+
         (response: any) => {
-          this.route.navigate( ['/login']);
+          this.load = true;
+
+          Swal.fire({
+            position: 'center',
+            icon: 'success',
+            title: 'Registro exitoso',
+            showConfirmButton: false,
+            timer: 3000
+          }).then((result) => {
+              this.route.navigate( ['/login'])
+          })   
 
       },
       (error) => {

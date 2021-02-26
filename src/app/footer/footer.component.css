@@ -11,8 +11,18 @@
 .card-header {
     margin-top: -2%;
     background-color: rgb(255, 255, 255);
+    font-family: 'Akaya Telivigala', cursive;
 }
 
+.card-title{
+    color:black;
+    font-family: 'Akaya Telivigala', cursive;
+}
+
+.card-body p{
+    color:black;
+    font-family: 'Akaya Telivigala', cursive;
+}
 .card-footer{
     background-color:#00adff61;
    
@@ -20,4 +30,5 @@
 
 .card-footer p{
     color:white;
+    font-family: 'Akaya Telivigala', cursive;
 }

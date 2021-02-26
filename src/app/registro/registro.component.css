@@ -5,12 +5,13 @@
 }
 
 body {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Akaya Telivigala', cursive;
     font-size: medium;
     background-image: url("https://carlotaruizblanque.files.wordpress.com/2012/01/sin-tc3adtulo-2.gif");
 }
 
 .form-formu {
+    font-family: 'Akaya Telivigala', cursive;
     width: 340px;
     height: 520px;
     background: #fdfdfd;
@@ -18,7 +19,7 @@ body {
     margin-top: 5%;
     box-shadow: 0px 0px 12px #000;
     padding: 15px 30px;
-    border-top: 4px solid #A0856E;
+    border-top: 4px solid #00adff61;
     color: black;
     border-radius: 20px;
 }
@@ -35,7 +36,7 @@ body {
 .control {
     width: 100%;
     border: 0;
-    border-bottom: 4px solid #A0856E;
+    border-bottom: 4px solid #00adff61;
     margin-bottom: 4px;
     padding: 5px 10px;
     font-size: 14px;
@@ -49,15 +50,20 @@ body {
 }
 
 .boton {
-    width: 19%;
+   width: 17%;
     height: 40px;
-    background: #A0856E;
+    background: #00aeffde;
     border: none;
     color: white;
-    margin-top: 16px;
+    margin-top: 19px;
     border-radius: 20px;
     outline: none;
     position: absolute;
+}
+
+.con a {
+    margin-top: 29%;
+    font-size: 14px;
 }
 
 .form-formu a {
@@ -67,12 +73,11 @@ body {
     text-align: center;
 }
 
-.con {
-    margin-top: 29%;
-    font-size: 14px;
+.form-formu a:hover {
+    color: #00aeffde;
 }
 
 .spinner-border {
-    top: 75%;
+    top: 72%;
     position: absolute;
 }
