@@ -3,6 +3,8 @@ import { Router } from '@angular/router';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { AppService } from '../service/app.service';
 
+import Swal from 'sweetalert2/dist/sweetalert2.js';
+
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -36,7 +38,19 @@ export class LoginComponent implements OnInit {
       this.client.postRequest('http://localhost:5000/api/v01/user/login', data).subscribe(
 
         (response: any) => {
-          this.route.navigate( ['/']);
+          //this.route.navigate( ['/']);
+
+          this.load = true;
+
+          Swal.fire({
+            position: 'center',
+            icon: 'success',
+            title: 'Bienvenido, has ingresado',
+            showConfirmButton: false,
+            timer: 2000
+          }).then(() => {
+              this.route.navigate( ['/inicio'])
+          })
 
       },
       (error) => {

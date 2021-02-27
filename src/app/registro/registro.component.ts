@@ -3,6 +3,8 @@ import { Router } from '@angular/router';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { AppService } from '../service/app.service';
 
+import Swal from 'sweetalert2/dist/sweetalert2.js';
+
 
 @Component({
   selector: 'app-registro',
@@ -48,7 +50,20 @@ export class RegistroComponent implements OnInit {
       this.client.postRequest('http://localhost:5000/api/v01/user/registro', data).subscribe(
 
         (response: any) => {
-          this.route.navigate( ['/login']);
+
+          //this.route.navigate( ['/login']);
+
+          this.load = true;
+
+          Swal.fire({
+            position: 'center',
+            icon: 'success',
+            title: 'Registro exitoso',
+            showConfirmButton: false,
+            timer: 2000
+          }).then(() => {
+              this.route.navigate( ['/login'])
+          })   
 
       },
       (error) => {

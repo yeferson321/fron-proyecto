@@ -6,6 +6,7 @@
 
 .card {
     border-radius: 0px;
+    margin-top: 36%;
 }
 
 .card-header {
@@ -13,11 +14,10 @@
     background-color: rgb(255, 255, 255);
 }
 
-.card-footer{
-    background-color:#00adff61;
-   
+.card-footer {
+    background-color: #00adff61;
 }
 
-.card-footer p{
-    color:white;
+.card-footer p {
+    color: white;
 }

@@ -1,14 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: medium;
-}
-
 .form-formu {
     width: 340px;
     height: 520px;
