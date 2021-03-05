@@ -15,6 +15,7 @@ import { MascotaComponent } from './mascota/mascota.component';
 import { Nav2Component } from './nav2/nav2.component';
 import { SobreComponent } from './sobre/sobre.component';
 import { PaginaprincipalComponent } from './paginaprincipal/paginaprincipal.component';
+import { PerfilComponent } from './perfil/perfil.component';
 
 
 @NgModule({
@@ -30,6 +31,7 @@ import { PaginaprincipalComponent } from './paginaprincipal/paginaprincipal.comp
     Nav2Component,
     SobreComponent,
     PaginaprincipalComponent,
+    PerfilComponent,
 
   ],
   imports: [

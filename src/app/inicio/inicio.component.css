@@ -1,0 +1,33 @@
+.input-group {
+    margin-top: 8%;
+    right: 6%;
+}
+
+.form-control {
+    margin-left: 65%;
+}
+
+.btn-outline-secondary {
+    color: rgb(98 205 255);
+    border-color: rgb(98 205 255);
+}
+
+#caja {
+    border-radius: 6px;
+    background: #0000000c;
+    height: auto;
+    width: auto;
+    padding: 0px;
+    margin: 80px;
+    margin-top: 4%;
+}
+
+.card-deck .card {
+    border-color: rgba(0, 0, 0, 0);
+    outline: none;
+    background-color: rgb(245, 240, 240);
+}
+
+.col {
+    margin: 4%;
+}

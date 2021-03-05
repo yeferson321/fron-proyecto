@@ -1,21 +1,5 @@
-.rounded {
-    width: 36px;
-    margin-top: 0%;
-    position: relative;
-}
-
-.card {
-    border-radius: 0px;
-    margin-top: 36%;
-}
-
-.card-header {
-    margin-top: -2%;
-    background-color: rgb(255, 255, 255);
-}
-
 .card-footer {
-    background-color: #00adff61;
+    background-color: rgb(98 205 255);
 }
 
 .card-footer p {
