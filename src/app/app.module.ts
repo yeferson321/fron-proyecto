@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
@@ -17,6 +18,7 @@ import { SobreComponent } from './sobre/sobre.component';
 import { PaginaprincipalComponent } from './paginaprincipal/paginaprincipal.component';
 import { PerfilComponent } from './perfil/perfil.component';
 
+import { DataTablesModule } from "angular-datatables";
 
 @NgModule({
   declarations: [
@@ -32,14 +34,14 @@ import { PerfilComponent } from './perfil/perfil.component';
     SobreComponent,
     PaginaprincipalComponent,
     PerfilComponent,
-
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    DataTablesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
